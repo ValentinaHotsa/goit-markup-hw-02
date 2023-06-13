@@ -1,3 +1,23 @@
+body {
+    font-family: ;
+}
+
+:root {
+    --primary-brand-color: #4d5ae5;
+    --pressed-state-color: #404bbf;
+    --dark-color: #2e2f42;
+    --succes-color: #31d0aa;
+    --text-color: #434455;
+    --subtle-text-color: #8e8f99;
+    --accent-color: #e7e9fc;
+    --light-color: #f4f4fd;
+    --modal-overlay-color: #2e2f42;
+    --hero-background-color: #2e2f42;
+    --white-background-color: #ffffff;
+    --modal-background-color: #fcfcfc;
+
+}
+
 /* Header section */
 .header {}
 
@@ -7,7 +27,11 @@
 
 .header-nav-item {}
 
-.header-nav-link {}
+.header-nav-link:hover,
+.header-nav-link:focus 
+{
+   background-color:var(--pressed-state-color);
+}
 
 .header-adress {}
 
