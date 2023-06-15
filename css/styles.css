@@ -6,7 +6,9 @@ body {
 .list {
     list-style: none;
 }
-a {text-decoration-line: none;}
+.link {
+    text-decoration: none;
+}
 :root {
     --primary-brand-color: #4d5ae5;
     --pressed-state-color: #404bbf;
@@ -28,19 +30,21 @@ a {text-decoration-line: none;}
 
 .header {}
 .header-logo{
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
         font-style: normal;
         font-weight: 800;
         font-size: 18px;
         line-height: 1.17;
-        display: flex;
-        align-items: center;
+        
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        color: var(--dark-color);
+        color: var(--primary-brand-color);
 }
-.logo-blue {
-    color: var(--primary-brand-color);
+.logo-black {
+    color: var(--dark-color);
+}
+.logo-white {
+    color: var(--light-color);
 }
 .header-nav {
     
@@ -65,6 +69,7 @@ a {text-decoration-line: none;}
 }
 
 .header-adress {
+    font-style: normal;
 
 }
 
@@ -98,7 +103,7 @@ a {text-decoration-line: none;}
         font-weight: 700;
         font-size: 56px;
         line-height: 1.07;
-        
+        text-align: center;
         letter-spacing: 0.02em;
         color: var(--white-background-color);
       
@@ -109,8 +114,7 @@ a {text-decoration-line: none;}
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
-        display: flex;
-        align-items: center;
+     
         letter-spacing: 0.04em;
        cursor: pointer;
     background-color: var(--primary-brand-color);
@@ -160,9 +164,11 @@ a {text-decoration-line: none;}
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.1;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     color: var(--dark-color);
+    text-align: center;
+    text-transform: capitalize;
 }
 
 .section-made-list {}
@@ -172,7 +178,9 @@ a {text-decoration-line: none;}
 .section-made-img {}
 
 /* Team section */
-.section {}
+.section {
+    background-color: var(--light-color);
+}
 
 .team {}
 
@@ -180,12 +188,16 @@ a {text-decoration-line: none;}
     font-style: normal;
         font-weight: 700;
         font-size: 36px;
-        line-height: 1.1;
+        line-height: 1.11;
         letter-spacing: 0.02em;
         color: var(--dark-color);
+        text-align: center;
+        text-transform: capitalize;
 }
 
-.section-team-list {}
+.section-team-list {
+    background-color: var(--white-background-color);
+}
 
 .section-team-item {}
 
@@ -215,13 +227,13 @@ a {text-decoration-line: none;}
 }
 
 .footer-logo {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
         font-style: normal;
         font-weight: 800;
         font-size: 18px;
         line-height: 1.17;
-        display: flex;
-        align-items: center;
+      
+       
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: var(--light-color);
@@ -246,9 +258,7 @@ font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    display: flex;
-    align-items: center;
-    text-align: center;
+   
     letter-spacing: 0.04em;
     color: var(--primary-brand-color);
     background-color: var(--light-color);
