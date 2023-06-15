@@ -96,7 +96,8 @@ body {
 /*  Hero section */
 .section {}
 
-.hero {background-color: var(--hero-background-color);}
+.hero 
+{background-color: var(--hero-background-color);}
 
 .title-page {
     font-style: normal;
@@ -129,7 +130,9 @@ body {
 /* Features section */
 .section {}
 
-.features {}
+.features {
+
+}
 
 .section-features-title {}
 
@@ -178,11 +181,11 @@ body {
 .section-made-img {}
 
 /* Team section */
-.section {
-    background-color: var(--light-color);
-}
+.section {}
 
-.team {}
+.team {
+background-color: var(--light-color);
+}
 
 .section-team-title {
     font-style: normal;
@@ -196,10 +199,12 @@ body {
 }
 
 .section-team-list {
-    background-color: var(--white-background-color);
+   
 }
 
-.section-team-item {}
+.section-team-item {
+    background-color: var(--white-background-color);
+}
 
 .section-team-img {}
 
@@ -236,7 +241,7 @@ body {
        
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        color: var(--light-color);
+        color: var(--primary-brand-color);
 
 }
 
