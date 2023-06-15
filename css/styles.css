@@ -6,6 +6,7 @@ body {
 .list {
     list-style: none;
 }
+a {text-decoration-line: none;}
 :root {
     --primary-brand-color: #4d5ae5;
     --pressed-state-color: #404bbf;
@@ -19,50 +20,71 @@ body {
     --hero-background-color: #2e2f42;
     --white-background-color: #ffffff;
     --modal-background-color: #fcfcfc;
+   
 
 }
 
 /* Header section */
-.header {}
 
+.header {}
+.header-logo{
+    font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.17;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--dark-color);
+}
+.logo-blue {
+    color: var(--primary-brand-color);
+}
 .header-nav {
     
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: var(--modal-overlay-color);
+        
 }
 
 .header-nav-list {}
 
-.header-nav-item {}
+.header-nav-item a {font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--dark-color);}
 
 .header-nav-link:hover,
 .header-nav-link:focus 
 {
   color: var(--pressed-state-color);
-  background-color: var(--pressed-state-color);
+  
+  
 }
 
 .header-adress {
-font-style: normal;
-    font-weight: 400;
+
+}
+
+.header-adress-list {
+    
+    
+    
+  }
+
+.header-adress-item a {
+    font-style: normal;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-
-    color: var(--text-color);
-}
-
-.header-adress-list {}
-
-.header-adress-item {}
+  color: var(--text-color);}
 
 .header-adress-link:hover,
 .header-adress-link:focus {
     color: var(--pressed-state-color);
+   
 }
 /* Main comtent */
 
@@ -123,7 +145,7 @@ font-style: normal;
 
 .feature-item-text {
     font-style: normal;
-        font-weight: 400;
+        
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
@@ -180,7 +202,7 @@ font-style: normal;
 
 .team-text {
     font-style: normal;
-        font-weight: 400;
+        
         font-size: 16px;
         line-height: 1.5; 
         letter-spacing: 0.02em;
@@ -192,10 +214,21 @@ font-style: normal;
     background-color: var(--hero-background-color);
 }
 
-.footer-link {}
+.footer-logo {
+    font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.17;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--light-color);
+
+}
 
 .footer-text {font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
