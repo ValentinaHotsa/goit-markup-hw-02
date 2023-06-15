@@ -1,7 +1,11 @@
 body {
-    font-family: ;
+        font-family: 'Roboto', sans-serif;
+        color: var(--text-color);
+        background-color: var(--white-background-color);
 }
-
+.list {
+    list-style: none;
+}
 :root {
     --primary-brand-color: #4d5ae5;
     --pressed-state-color: #404bbf;
@@ -21,7 +25,15 @@ body {
 /* Header section */
 .header {}
 
-.header-nav {}
+.header-nav {
+    
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--modal-overlay-color);
+}
 
 .header-nav-list {}
 
@@ -30,26 +42,63 @@ body {
 .header-nav-link:hover,
 .header-nav-link:focus 
 {
-   background-color:var(--pressed-state-color);
+  color: var(--pressed-state-color);
+  background-color: var(--pressed-state-color);
 }
 
-.header-adress {}
+.header-adress {
+font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    color: var(--text-color);
+}
 
 .header-adress-list {}
 
 .header-adress-item {}
 
-.header-adress-link {}
+.header-adress-link:hover,
+.header-adress-link:focus {
+    color: var(--pressed-state-color);
+}
 /* Main comtent */
 
 /*  Hero section */
 .section {}
 
-.hero {}
+.hero {background-color: var(--hero-background-color);}
 
-.title-page {}
+.title-page {
+    font-style: normal;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.07;
+        
+        letter-spacing: 0.02em;
+        color: var(--white-background-color);
+      
+}
 
-.hero-btm {}
+.hero-btm {
+    font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.04em;
+       cursor: pointer;
+    background-color: var(--primary-brand-color);
+    color: var(--white-background-color);
+    
+}
+.hero-btm:hover,
+.hero-btm:focus {
+    background-color: var(--pressed-state-color);
+}
 
 /* Features section */
 .section {}
@@ -62,16 +111,37 @@ body {
 
 .section-features-item {}
 
-.features-item-title {}
+.features-item-title {
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--dark-color);
+}
 
-.feature-item-text {}
+.feature-item-text {
+    font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+}
 
 /*  What are we doing section */
 .section {}
 
 .made {}
 
-.section-made-title {}
+.section-made-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: var(--dark-color);
+}
 
 .section-made-list {}
 
@@ -84,7 +154,14 @@ body {
 
 .team {}
 
-.section-team-title {}
+.section-team-title {
+    font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+        color: var(--dark-color);
+}
 
 .section-team-list {}
 
@@ -92,16 +169,37 @@ body {
 
 .section-team-img {}
 
-.team-name {}
+.team-name {
+    font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: var(--dark-color);
+}
 
-.team-text {}
+.team-text {
+    font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5; 
+        letter-spacing: 0.02em;
+       
+}
 
 /* Footer section */
-.footer {}
+.footer {
+    background-color: var(--hero-background-color);
+}
 
 .footer-link {}
 
-.footer-text {}
+.footer-text {font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+color: var(--light-color);}
 
 /* Page 2 */
 .section-filter {}
@@ -110,8 +208,24 @@ body {
 
 .filter-item {}
 
-.filter-buttom {}
-
+.filter-button {
+font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--primary-brand-color);
+    background-color: var(--light-color);
+}
+.filter-button:hover,
+.filter-button:focus {
+    color: var(--white-background-color);
+    background-color: var(--pressed-state-color);
+    cursor: pointer;
+}
 .projects {}
 
 .projects-title {}
@@ -120,8 +234,23 @@ body {
 
 .projects-item {}
 
-.projects-img {}
+.projects-img {
 
-.projects-name {}
+}
 
-.projects-type {}
+.projects-name {
+    font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: var(--dark-color);
+}
+
+.projects-type {
+    font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+}
